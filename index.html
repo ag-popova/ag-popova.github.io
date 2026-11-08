@@ -163,6 +163,20 @@ details[open] summary::after{content:" −"}
 .tg-link{font-family:var(--f-display);font-weight:500;font-size:clamp(24px,4vw,32px);color:var(--accent);text-underline-offset:6px;text-decoration-thickness:2px}
 .tg-profile{display:inline-flex;align-items:center;gap:12px}
 .tg-icon{width:1.1em;height:1.1em;flex:none}
+.mentor{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:start}
+@media (max-width:760px){.mentor{grid-template-columns:1fr;gap:24px}}
+.mentor > *{min-width:0}
+.mentor-lead{font-size:clamp(19px,2.2vw,22px);line-height:1.45;margin:0}
+.mentor-help{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;display:flex;flex-direction:column;align-items:flex-start;gap:16px}
+.mentor-help h3{font-size:17px}
+.mentor-intro{display:grid;gap:16px}
+.mentor-note{margin:0;font-size:16px;color:var(--muted)}
+.mentor-note b{color:var(--ink)}
+.mentor-format{margin:0;font-size:15px;color:var(--muted)}
+.mentor-format b{color:var(--ink);font-weight:600}
+.mentor-help ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:15.5px}
+.mentor-help li{position:relative;padding-left:22px}
+.mentor-help li::before{content:"";position:absolute;left:0;top:.55em;width:9px;height:9px;border-radius:2px;background:var(--note)}
 .copied{font-size:14px;color:var(--muted);min-height:1.4em}
 footer{border-top:1px solid var(--line);padding-block:20px;font-size:13px;color:var(--muted);font-family:var(--f-mono)}
 .path .what ul{margin:8px 0 0;padding-left:20px;font-size:15px;list-style:disc}
@@ -181,6 +195,7 @@ footer{border-top:1px solid var(--line);padding-block:20px;font-size:13px;color:
     <ul>
       <li><a href="#path">Опыт работы</a></li>
       <li><a href="#cases">Кейсы</a></li>
+      <li><a href="#mentoring">Менторство</a></li>
       <li><a href="#projects">Проекты</a></li>
       <li><a href="#contact">Контакты</a></li>
     </ul>
@@ -275,6 +290,31 @@ UX-исследователей, аналитиков данных, маркет
           <div class="outcome"><b>CSAT</b>теперь замеряется регулярно, а фидбек идёт прямо в бэклог</div>
         </article>
 
+      </div>
+    </div>
+  </section>
+
+  <section id="mentoring">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Менторство</h2>
+      </div>
+      <div class="mentor">
+        <div class="mentor-intro">
+          <p class="mentor-lead">Уже 3 года я менторю Junior- и Middle-исследователей и тех, кто хочет перейти в UX&#8209;исследования из другой профессии.</p>
+          <p class="mentor-note">За это время ко мне обратились <b>более 30 человек</b>. Менти отмечают, что после консультаций чувствуют себя увереннее и лучше видят свои зоны роста.</p>
+        </div>
+        <div class="mentor-help">
+          <h3>С чем помогаю</h3>
+          <ul>
+            <li>Улучшить резюме и портфолио для поиска работы</li>
+            <li>Понять, куда расти дальше: следующий грейд, лидство или углубление в методы</li>
+            <li>Разобрать проведённое исследование или кейс и найти слабые места</li>
+            <li>Спланировать переход в UX-исследования из другой профессии</li>
+          </ul>
+          <p class="mentor-format"><b>Формат:</b> разовая консультация или долгосрочное менторство</p>
+          <a class="btn primary" href="https://getmentor.dev/mentor/anna-popova-2298" target="_blank" rel="noopener">Записаться на Getmentor</a>
+        </div>
       </div>
     </div>
   </section>
